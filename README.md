@@ -9,7 +9,7 @@ Looking for a **summer 2027 research internship** in machine learning, quantitat
 ### Current work
 
 - **Spiking network model of macaque V1.** 136,000 conductance-based neurons and 36 million synapses (excitatory, PV and SOM cells, short-term plasticity), built to test how SOM interneurons shape surround suppression. Manuscript in preparation; code to be released with the paper.
-- **Validated GPU acceleration.** I directed AI coding agents to optimize and port the simulator: 814 s → 183 s per simulation on one CPU core → about 40 ms on a laptop GPU, roughly 20,000× faster per simulation. Every change was gated by statistical tests against a validated reference; the GPU port matched the CPU code on all 77 per-ring readouts.
+- **Validated GPU acceleration.** I directed AI coding agents to optimize and port the simulator: 814 s → 183 s per simulation on one CPU core → about 8.5 ms on a laptop GPU (with a validated shorter warm-up), roughly 68,000× faster per simulated second. Every change was gated by bitwise or statistical checks against a validated reference; the GPU port matched the CPU code on all 77 per-ring readouts.
 - **Bayesian calibration.** About 45 parameters fit by staged Bayesian optimization (a GPU implementation of TPE) on a validated reduced surrogate.
 
 ### Projects
